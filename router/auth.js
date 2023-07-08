@@ -5,8 +5,7 @@ const jwt = require("jsonwebtoken")
 require('../db/conn');
 const User = require("../model/userSchema");
 const authenticate = require("../middleware/authenticate")
-const cors = require("cors")
-app.use(cors())
+
 
 router.get('/', (req, res) => {
     res.send("this is home page (router.js)");

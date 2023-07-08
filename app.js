@@ -8,7 +8,8 @@ dotenv.config({path:'./config.env'})
 require('./db/conn')
 const bodyParser = require("body-parser");
 // const user = require('./model/userSchema')
-
+const cors = require("cors")
+app.use(cors())
 // json ne object ma convert karse
 app.use(express.json())              //this is middleware
 router.use(bodyParser.json());
