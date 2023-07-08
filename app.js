@@ -9,7 +9,7 @@ require('./db/conn')
 const bodyParser = require("body-parser");
 // const user = require('./model/userSchema')
 const cors = require("cors")
-app.use(cors({"origin":"https://64a95584909083768baddf44--singular-biscotti-9ad961.netlify.app"}))
+app.use(cors({origin:"https://64a95584909083768baddf44--singular-biscotti-9ad961.netlify.app"}))
 // json ne object ma convert karse
 app.use(express.json())              //this is middleware
 router.use(bodyParser.json());
